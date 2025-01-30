@@ -20,7 +20,7 @@ function CopyRight() {
               {/*/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, *** /*/}
               {/*/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". *** /*/}
               Designed By{" "}
-              <Link className="border-bottom" to="#">
+              <Link className="border-bottom" to="https://www.linkedin.com/in/nikhil-saini-85267725a">
                 Nikhil Saini
               </Link>
               
