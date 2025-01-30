@@ -20,13 +20,10 @@ function CopyRight() {
               {/*/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, *** /*/}
               {/*/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". *** /*/}
               Designed By{" "}
-              <Link className="border-bottom" to="https://htmlcodex.com">
-                HTML Codex
-              </Link>{" "}
-              Distributed By{" "}
-              <Link className="border-bottom" to="https://themewagon.com">
-                ThemeWagon
+              <Link className="border-bottom" to="#">
+                Nikhil Saini
               </Link>
+              
             </div>
           </div>
         </div>
