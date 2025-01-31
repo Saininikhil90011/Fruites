@@ -31,7 +31,7 @@ function CardFruitShop({ one }) {
                 className="btn border border-secondary rounded-pill px-3 text-primary"
               >
                 <i className="fa fa-shopping-bag me-2 text-primary" /> Add to
-                cart
+                cart 
               </Link>
             </div>
           </div>
