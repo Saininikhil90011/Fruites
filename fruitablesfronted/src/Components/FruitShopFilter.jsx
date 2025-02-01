@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-function FruitShopFilter() {
+function FruitShopFilter({props}) {
+  // console.log(props.add_data);
+  
   const url = import.meta.env.VITE_BACKEND_URL
   let [cardData, setCardData] = useState([])
+
   let [cartData, setCartData] = useState(JSON.parse(localStorage.getItem("cartData")) || [])
   let [name, setName] = useState("")
   const handleInput = (e) => {
@@ -34,13 +37,16 @@ function FruitShopFilter() {
     apiFetch()
   }, [])
   const handleCart = (card) => {
-    // console.log(card);
+    props.add_data(card)
 
-    let addKey = { ...card, quantity: 1 }
+
+    // console.log(card);
+    // let addKey = { ...card, quantity: 1 }
     // let previousOrNew = [...cartData,addKey]
-    cartData.push(addKey)
-    setCartData(cardData)
-    localStorage.setItem('cartData', JSON.stringify(cartData))
+  
+    // cartData.push(addKey)
+    // setCartData(cardData)
+    // localStorage.setItem('cartData', JSON.stringify(cartData))
   }
   return (
     <>

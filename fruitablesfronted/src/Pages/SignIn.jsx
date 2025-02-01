@@ -31,7 +31,7 @@ function SignIn() {
   }
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <SinglePageHeader one={{ title: "signin" }} />
       <div>
         <h1>SignIn</h1>

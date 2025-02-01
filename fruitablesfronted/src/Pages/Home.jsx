@@ -17,7 +17,7 @@ function Home() {
   return (
     <>
       {/* navbar */}
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <HeaderFeatures/>
       <FruitShop/>

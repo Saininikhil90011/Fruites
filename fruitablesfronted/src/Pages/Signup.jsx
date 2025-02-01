@@ -36,7 +36,7 @@ function Signup() {
 
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <SinglePageHeader one={{ title: "SignUp" }} />
             <div>
                 <h1>SignUp</h1>

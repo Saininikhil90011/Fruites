@@ -12,7 +12,7 @@ function Contact() {
             <title>Contact</title> {/* Set your desired title here */}
           </Helmet>
       {/* navbar */}
-      <Navbar />
+      {/* <Navbar /> */}
       <SinglePageHeader one={{title:"Contact"}}/>
       <ContactPage/>
       {/* <h1>Contact</h1> */}

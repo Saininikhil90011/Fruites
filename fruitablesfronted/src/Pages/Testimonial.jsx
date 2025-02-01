@@ -7,7 +7,7 @@ function Testimonial() {
   return (
     <>
       {/* navbar */}
-      <Navbar />
+      {/* <Navbar /> */}
       <SinglePageHeader one={{title:"Testimonial"}}/>
       {/* <h1>Testimonial</h1> */}
       <Footer />

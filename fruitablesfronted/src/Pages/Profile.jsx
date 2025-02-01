@@ -13,7 +13,7 @@ function Profile() {
     }
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <SinglePageHeader one={{ title: "Profile" }} />
             <h1>name:{userData["name"]}</h1>
             <h1>email:{userData["email"]}</h1>

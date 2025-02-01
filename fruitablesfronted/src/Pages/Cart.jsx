@@ -11,7 +11,7 @@ function Cart() {
             <title>Cart</title> {/* Set your desired title here */}
           </Helmet>
       {/* navbar */}
-      <Navbar />
+      {/* <Navbar /> */}
       {/* single page header */}
       <SinglePageHeader one={{title:"Cart"}}/>
       {/* <BannerSection /> */}

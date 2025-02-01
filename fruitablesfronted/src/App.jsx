@@ -12,15 +12,23 @@ import Shopdetail from "./Pages/Shopdetail";
 import Signup from "./Pages/Signup";
 import SignIn from "./Pages/SignIn";
 import Profile from "./Pages/Profile";
-import { HelmetProvider } from 'react-helmet-async';
+import { HelmetProvider } from "react-helmet-async";
+import Navbar from "./Components/Navbar";
 function App() {
+  let [arr,setarr] = useState([])
+  const add_data = (obj)=>{
+    
+    setarr([...arr,obj])
+  }
+  console.log(arr);
   return (
     <>
       <HelmetProvider>
         <BrowserRouter>
+          <Navbar props={{arr:arr}}/>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/shop" element={<Shop />} />
+            <Route path="/shop" element={<Shop props={{add_data}}/>} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<CheckOut />} />
             <Route path="/contact" element={<Contact />} />

@@ -5,16 +5,16 @@ import SinglePageHeader from "../Components/SinglePageHeader";
 import FruitShopFilter from "../Components/FruitShopFilter";
 import { Helmet } from 'react-helmet-async';
 
-function Shop() {
+function Shop({props}) {
   return (
     <>
       <Helmet>
         <title>Shop - My App</title> {/* Set your desired title here */}
       </Helmet>
       {/* Navbar */}
-      <Navbar />
+      
       <SinglePageHeader one={{ title: "Shop" }} />
-      <FruitShopFilter />
+      <FruitShopFilter  props={props}/>
       {/* <h1>Shop</h1> */}
       <Footer />
     </>

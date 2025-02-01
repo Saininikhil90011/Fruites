@@ -8,7 +8,7 @@ function CheckOut() {
   return (
     <>
       {/* navbar */}
-      <Navbar />
+      {/* <Navbar /> */}
       <SinglePageHeader one={{title:"Checkout"}}/>
       <CheckOutPage/>
       {/* <h1>Checkout</h1> */}

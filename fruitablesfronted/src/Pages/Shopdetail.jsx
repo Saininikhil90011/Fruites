@@ -7,7 +7,7 @@ function Shopdetail() {
   return (
     <>
       {/* navbar */}
-      <Navbar />
+      {/* <Navbar /> */}
       <SinglePageHeader one={{ title: "Shop Detail" }} />
       <div className="container-fluid py-5 mt-5">
         <div className="container py-5">

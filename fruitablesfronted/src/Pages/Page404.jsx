@@ -7,7 +7,7 @@ function Page404() {
   return (
     <>
       {/* navbar */}
-      <Navbar />
+      {/* <Navbar /> */}
       <SinglePageHeader one={{title:"404 Error"}}/>
       {/* <h1>404</h1> */}
       <Footer />

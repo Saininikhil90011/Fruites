@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-function Navbar() {
-  const [url, setUrl] = useState(window.location.pathname)
-  let [cartData, setCartData] = useState(JSON.parse(localStorage.getItem('cartData')) || 0)
-  let [userData, setUserData] = useState(JSON.parse(localStorage.getItem('userData')) || 0)
+function Navbar({ props }) {
+  console.log(props.arr.length);
+
+  const [url, setUrl] = useState(window.location.pathname);
+  // let [cartData, setCartData] = useState(JSON.parse(localStorage.getItem('cartData')) || 0)
+  let [userData, setUserData] = useState(
+    JSON.parse(localStorage.getItem("userData")) || 0
+  );
   return (
     <>
       <div className="container-fluid fixed-top">
@@ -54,13 +58,26 @@ function Navbar() {
               id="navbarCollapse"
             >
               <div className="navbar-nav mx-auto">
-                <Link to="/" className={`nav-item nav-link ${(url == "/") ? "active" : ""}`}>
+                <Link
+                  to="/"
+                  className={`nav-item nav-link ${url == "/" ? "active" : ""}`}
+                >
                   Home
                 </Link>
-                <Link to="/shop" className={`nav-item nav-link ${(url == "/shop") ? "active" : ""}`}>
+                <Link
+                  to="/shop"
+                  className={`nav-item nav-link ${
+                    url == "/shop" ? "active" : ""
+                  }`}
+                >
                   Shop
                 </Link>
-                <Link to="/shopdetail" className={`nav-item nav-link ${(url == "/shopdetail") ? "active" : ""}`}>
+                <Link
+                  to="/shopdetail"
+                  className={`nav-item nav-link ${
+                    url == "/shopdetail" ? "active" : ""
+                  }`}
+                >
                   Shop Detail
                 </Link>
                 <div className="nav-item dropdown">
@@ -86,7 +103,12 @@ function Navbar() {
                     </Link>
                   </div>
                 </div>
-                <Link to="/contact" className={`nav-item nav-link ${(url == "/contact") ? "active" : ""}`}>
+                <Link
+                  to="/contact"
+                  className={`nav-item nav-link ${
+                    url == "/contact" ? "active" : ""
+                  }`}
+                >
                   Contact
                 </Link>
               </div>
@@ -104,7 +126,7 @@ function Navbar() {
                     className="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1"
                     style={{ top: "-5px", left: 15, height: 20, minWidth: 20 }}
                   >
-                    {cartData.length || 0}
+                    {props.arr.length || 0}
                   </span>
                 </Link>
                 {userData ? (
@@ -123,7 +145,6 @@ function Navbar() {
                   </Link>
                 )}
               </div>
-
             </div>
           </nav>
         </div>
